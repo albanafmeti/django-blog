@@ -1,5 +1,25 @@
 {% extends 'blog/layouts/base.html' %}
 
+{% block title %} Explore all blog {% endblock %}
+
+{% block header %}
+
+    <header class="masthead" style="background-image: url('/static/img/home-bg.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>Explore Blog</h1>
+                        <span class="subheading">Start exploring magic content right now.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
+
 {% block content %}
 
     <div class="container">
@@ -25,10 +45,6 @@
 
                 {% endfor %}
 
-                <!-- Pager -->
-                <div class="clearfix">
-                    <a class="btn btn-primary float-right" href="{% url "all-blog" %}">All Posts &rarr;</a>
-                </div>
             </div>
         </div>
     </div>
